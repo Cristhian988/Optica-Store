@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import img1 from "../../public/ejemplo.jpg";
+import img2 from "../../public/ejemplo2.jpg";
 
 export default function CartModal() {
   const [cartItem, setcartItem] = useState(true);
@@ -11,16 +13,14 @@ export default function CartModal() {
       ) : (
         <>
           <h2 className="text-xl mb-4">Carrito de Compras</h2>
-          {/* List */}
           <div className="flex flex-col gap-8">
-            {/* Item */}
             <div className="flex gap-4">
               <Image
-                src="/"
+                src={img1}
                 alt=""
                 width={72}
                 height={96}
-                className="object-cover rounded-md"
+                className="object-contain rounded-md"
               />
               <div className="flex flex-col justify-between w-full">
                 {/* Top */}
@@ -28,7 +28,9 @@ export default function CartModal() {
                   {/* Title */}
                   <div className="flex items-center justify-between gap-8">
                     <h3 className="font-semibold">Producto</h3>
-                    <div className="p-1 bg-[#1d5a87] rounded-md">$49.99</div>
+                    <div className="p-1 bg-[#1d5a87] rounded-md">
+                      S/. 349.99
+                    </div>
                   </div>
                   {/* Description */}
                   <div className="text-sm ">disponible</div>
@@ -43,11 +45,11 @@ export default function CartModal() {
             {/* Item */}
             <div className="flex gap-4">
               <Image
-                src="/"
+                src={img2}
                 alt=""
                 width={72}
                 height={96}
-                className="object-cover rounded-md"
+                className="object-contain rounded-md"
               />
               <div className="flex flex-col justify-between w-full">
                 {/* Top */}
@@ -55,7 +57,9 @@ export default function CartModal() {
                   {/* Title */}
                   <div className="flex items-center justify-between gap-8">
                     <h3 className="font-semibold">Producto</h3>
-                    <div className="p-1 bg-[#1d5a87] rounded-md">$49.99</div>
+                    <div className="p-1 bg-[#1d5a87] rounded-md">
+                      S/. 599.99
+                    </div>
                   </div>
                   {/* Description */}
                   <div className="text-sm ">disponible</div>
@@ -72,7 +76,7 @@ export default function CartModal() {
           <div className="mt-4">
             <div className="flex items-center justify-between font-semibold">
               <span className="">Subtotal</span>
-              <span className="">$49.99</span>
+              <span className="">S/. 949.98</span>
             </div>
             <div className="flex justify-between text-sm mt-4">
               <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">

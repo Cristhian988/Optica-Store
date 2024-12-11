@@ -1,17 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Glasses1 from "../../public/SunGlasses/Glasses1.jpg";
+import Glasses2 from "../../public/SunGlasses/Glasses2.jpg";
+import Glasses3 from "../../public/SunGlasses/Glasses3.jpg";
+import Glasses4 from "../../public/SunGlasses/Glasses4.jpg";
+import GlassesHover1 from "../../public/SunGlasses/GlassesHover1.jpg";
+import GlassesHover2 from "../../public/SunGlasses/GlassesHover2.jpg";
+import GlassesHover3 from "../../public/SunGlasses/GlassesHover3.jpg";
+import GlassesHover4 from "../../public/SunGlasses/GlassesHover4.jpg";
 
-import SunGlasses1 from "../../public/SunGlasses/SunGlasses1.jpg";
-import SunGlasses2 from "../../public/SunGlasses/SunGlasses2.jpg";
-import SunGlasses3 from "../../public/SunGlasses/SunGlasses3.jpg";
-import SunGlasses4 from "../../public/SunGlasses/SunGlasses4.jpg";
-import SunGlassesHover1 from "../../public/SunGlasses/SunGlassesHover1.jpg";
-import SunGlassesHover2 from "../../public/SunGlasses/SunGlassesHover2.jpg";
-import SunGlassesHover3 from "../../public/SunGlasses/SunGlassesHover3.jpg";
-import SunGlassesHover4 from "../../public/SunGlasses/SunGlassesHover4.jpg";
-
-export default function ProductSunGlasses() {
+export default function ProductGlasses() {
   return (
     <div className=" mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
       <Link
@@ -20,14 +19,14 @@ export default function ProductSunGlasses() {
       >
         <div className="relative w-full h-80 bg-white rounded-md">
           <Image
-            src={SunGlassesHover1}
+            src={GlassesHover1}
             alt="sunglasses"
             sizes="25vw"
             fill
             className="absolute object-contain rounded-md z-10 hover:opacity-0 transition-opacity ease-in-out duration-500"
           />
           <Image
-            src={SunGlasses1}
+            src={Glasses1}
             alt="sunglasses"
             sizes="25vw"
             fill
@@ -49,14 +48,14 @@ export default function ProductSunGlasses() {
       >
         <div className="relative w-full h-80 bg-white rounded-md">
           <Image
-            src={SunGlassesHover2}
+            src={GlassesHover2}
             alt="sunglasses"
             sizes="25vw"
             fill
             className="absolute object-contain rounded-md z-10 hover:opacity-0 transition-opacity ease-in-out duration-500"
           />
           <Image
-            src={SunGlasses2}
+            src={Glasses2}
             alt="sunglasses"
             sizes="25vw"
             fill
@@ -78,14 +77,14 @@ export default function ProductSunGlasses() {
       >
         <div className="relative w-full h-80 bg-white rounded-md">
           <Image
-            src={SunGlassesHover3}
+            src={GlassesHover3}
             alt="sunglasses"
             sizes="25vw"
             fill
             className="absolute object-contain rounded-md z-10 hover:opacity-0 transition-opacity ease-in-out duration-500"
           />
           <Image
-            src={SunGlasses3}
+            src={Glasses3}
             alt="sunglasses"
             sizes="25vw"
             fill
@@ -107,14 +106,14 @@ export default function ProductSunGlasses() {
       >
         <div className="relative w-full h-80 bg-white rounded-md">
           <Image
-            src={SunGlassesHover4}
+            src={GlassesHover4}
             alt="sunglasses"
             sizes="25vw"
             fill
             className="absolute object-contain rounded-md z-10 hover:opacity-0 transition-opacity ease-in-out duration-500"
           />
           <Image
-            src={SunGlasses4}
+            src={Glasses4}
             alt="sunglasses"
             sizes="25vw"
             fill
